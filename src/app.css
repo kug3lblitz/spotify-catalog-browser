@@ -11,3 +11,31 @@ body {
 .appTitle {
   font-size: 180%;
 }
+
+/*profile styling*/
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-info {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border: 3px solid lime;
+  border-radius: 35px;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 150%;
+}
+
+.profile-followers, .profile-genres {
+  font-size: 100%;
+}
