@@ -18,15 +18,19 @@ class Profile extends Component {
             />
             <div className="profile-info">
                 <div className="profile-name">{artist.name}</div>
-                <div className="profile-followers">Followers: {artist.followers.total}</div>
+                <div className="profile-followers">
+                    {artist.followers.total} Followers
+                </div>
                 <div className="profile-genres">
                     {
                       artist.genres.map((genre, key) => {
                       //add comma to end of each item in [genre]
-                        genre = genre !== artist.genres[artist.genres.length-1] ? ` ${genre},` : ` & ${genre}`;
-                        return (
-                          <span key={key}>{genre}</span>
-                        )
+                      genre = genre !== artist.genres[artist.genres.length-1]
+                                    ? ` ${genre},`
+                                    : ` & ${genre}`;
+                    return (
+                      <span key={key}>{genre}</span>
+                       )
                       })
                     }
                 </div>
